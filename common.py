@@ -2,15 +2,12 @@ import pyupbit
 from pyupbit import Upbit
 from pandas import DataFrame
 
+access = 'RvHg1iA9Vu9U3W8JdZUaOjbdQwcEPR6AscWzyOrk'
+print(access)
 
-with open("fake.txt", "r") as f:
+secret = 'Ih3YKktjrxuN27TOLo96wy0mXNAF3Ax70rSPy3da'
+print(secret)
 
-    string = f.readline()
-    access = string.strip()
-    print(access)
-    string = f.readline()
-    secret = string.strip()
-    print(secret)
 upbit = Upbit(access,secret)
 # balance = upbit.get_balances() 
 # print(balance)
